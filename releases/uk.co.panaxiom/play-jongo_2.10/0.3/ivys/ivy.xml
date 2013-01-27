@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ivy-module version="2.0" xmlns:e="http://ant.apache.org/ivy/extra">
-	<info organisation="uk.co.panaxiom" module="play-jongo_2.10" revision="0.3" status="release" publication="20130114150527">
+	<info organisation="uk.co.panaxiom" module="play-jongo_2.10" revision="0.3" status="release" publication="20130127184731">
 		<description>
 		play-jongo
 		</description>
