@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ivy-module version="2.0" xmlns:e="http://ant.apache.org/ivy/extra">
-	<info organisation="uk.co.panaxiom" module="dubsub" revision="0.1-SNAPSHOT" status="integration" publication="20130402200330">
+	<info organisation="uk.co.panaxiom" module="dubsub" revision="0.1-SNAPSHOT" status="integration" publication="20130404154653">
 		<description>
 		dubsub
 		</description>
