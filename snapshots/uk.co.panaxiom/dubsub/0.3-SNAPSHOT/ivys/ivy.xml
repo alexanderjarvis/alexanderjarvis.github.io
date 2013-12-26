@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ivy-module version="2.0" xmlns:e="http://ant.apache.org/ivy/extra">
+	<info organisation="uk.co.panaxiom" module="dubsub" revision="0.3-SNAPSHOT" status="integration" publication="20131226191702">
+		<description>
+		dubsub
+		</description>
+	</info>
+	<configurations>
+		<conf name="compile" visibility="public" description=""/>
+		<conf name="runtime" visibility="public" description="" extends="compile"/>
+		<conf name="test" visibility="public" description="" extends="runtime"/>
+		<conf name="provided" visibility="public" description=""/>
+		<conf name="optional" visibility="public" description=""/>
+		<conf name="multi-jvm" visibility="public" description="" extends="test"/>
+		
+		
+		
+		
+		<conf name="sources" visibility="public" description=""/>
+		<conf name="docs" visibility="public" description=""/>
+		<conf name="pom" visibility="public" description=""/>
+		
+	</configurations>
+	<publications>
+		<artifact name="dubsub" type="pom" ext="pom" conf="pom"/>
+		<artifact name="dubsub" type="jar" ext="jar" conf="compile"/>
+		<artifact name="dubsub" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+		<artifact name="dubsub" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+	</publications>
+	<dependencies>
+		
+		<dependency org="org.scala-lang" name="scala-library" rev="2.10.3" conf="compile->default(compile)"/>
+		<dependency org="com.typesafe.akka" name="akka-actor_2.10" rev="2.2.3" conf="compile->default(compile)"/>
+		<dependency org="com.typesafe.akka" name="akka-remote_2.10" rev="2.2.3" conf="compile->default(compile)"/>
+		<dependency org="com.typesafe.akka" name="akka-cluster_2.10" rev="2.2.3" conf="compile->default(compile)"/>
+		<dependency org="com.typesafe.akka" name="akka-slf4j_2.10" rev="2.2.3" conf="compile->default(compile)"/>
+		<dependency org="com.typesafe.akka" name="akka-multi-node-testkit_2.10" rev="2.2.3" conf="compile->default(compile)"/>
+		<dependency org="org.scalatest" name="scalatest_2.10" rev="1.9.1" conf="test->default(compile)"/>
+	</dependencies>
+</ivy-module>
